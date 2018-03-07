@@ -26,13 +26,15 @@
         "build:js": "uglifyjs scripts/scripts.js > dist/scripts/scripts.js",
         "prebuild": "npm run clean && npm run mkdirs && npm run copy",
         "build": "npm run build:css && npm run build:js",
-        "postbuild": "cp -rf styles dist && cp -rf scripts dist",
+        "postbuild:css": "cp -rf styles dist",
+        "postbuild:js": "cp -rf scripts dist",
+        "postbuild": "npm run postbuild:css && npm run postbuild:js",
         "preserve": "npm run build",
         "serve": "browser-sync start -s --files 'dist/**/*.(js|css|html)' --ss 'dist' --port 8080 --reload-debounce 1000",
         "watch:assets": "onchange 'assets/**/*' -- npm run copy:assets",
         "watch:html": "onchange '*.html' -- npm run copy:html",
-        "watch:css": "onchange 'styles/**/*.sass' -- npm run build:css",
-        "watch:js": "onchange 'scripts/*.js' -- npm run build:js",
+        "watch:css": "onchange 'styles/**/*.sass' -- npm run build:css && npm run postbuild:css",
+        "watch:js": "onchange 'scripts/*.js' -- npm run build:js && npm run postbuild:js",
         "start": "run-p serve watch:*"
     }
 }
