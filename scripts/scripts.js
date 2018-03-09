@@ -1,18 +1,11 @@
-$(document).ready(function() {
-  $('.nav').click(function() {
-    $('.nav').toggleClass('visible');
-  });
+$("header--trigger__medium").click(function() {
+  $('.header--full').toggleClass('.header--medium');
+});
 
-  $('a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
+$("header--trigger__small").click(function() {
+  $('.header--medium').toggleClass('.header--small');
+});
 
-    var target = this.hash;
-    var $target = $(target);
-
-    $('html, body').animate({
-      'scrollTop': $target.offset().top
-    }, 1000, 'swing', function() {
-      window.location.hash = target;
-    });
-  });
+$("header--trigger__shadow").click(function() {
+  $('.header--small').toggleClass('.header--shadow');
 });
