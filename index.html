@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,19 +7,72 @@
 	============================================= -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Camilla Medeiros">
+	<meta name="description" content="Camilla Medeiros website">
 	<meta name="author" content="Camilla Medeiros">
 
 	<title>Camilla Medeiros</title>
 
-</head>
-<body>
+	<!-- Favicon
+	============================================= -->
+	<!-- <link rel="icon" href="images/favicon.png"> -->
 
-	<main class="main">
-        <h1>Camilla Medeiros</h1>
-        <ul>
-            <li><a href="camillapmedeiros.github.io">example</a></li>
-        </ul>
+	<!-- CSS
+	============================================= -->
+	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+	<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="styles/css/styles.min.css">
+
+</head>
+<body class="body">
+    <main class="main">
+        <header class="header header--full">
+            <h1 class="header--title">Camilla Medeiros</h1>
+            <nav class="navigation">
+                <ul class="navigation--list">
+                    <li class="navigation--item">
+                        <a href="projects.html" class="navigation--link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="navigation--item">
+                        <a href="labs.html" class="navigation--link">
+                            Labs
+                        </a>
+                    </li>
+                    <li class="navigation--item">
+                        <a href="about.html" class="navigation--link">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </main>
+
+    <footer class="footer">
+        <p class="footer--left">
+            Designed &amp; coded with <i class="fa fa-heart"></i>
+            by <a class="footer--link" href="http://github.io/camillapmedeiros">@camillapmedeiros</a>
+        </p>
+        <div class="footer--right text-align__right">
+            <div class="footer--icons">
+                <a class="footer--social" href="http://behance.net/camillapmedeiros">
+                    <i class="fa fa-behance"></i>
+                </a>
+                <a class="footer--social" href="http://github.io/camillapmedeiros">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a class="footer--social" href="http://linkedin.com/in/camillapmedeiros">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+	<!-- Javascript
+	============================================= -->
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="scripts/scripts.js"></script>
+
 </body>
 </html>
