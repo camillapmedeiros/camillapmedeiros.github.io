@@ -1,14 +1,15 @@
 ///////////////////////////////////////////////////////////////
 //
-// PROFILE
+// BLOCKS
 //
 ///////////////////////////////////////////////////////////////
 
-.profile
-    display: flex
-    align-items: center
-    max-width: 600px
-    margin: 2.5rem auto
+.block
+    &__profile
+        display: flex
+        align-items: center
+        max-width: 600px
+        margin: 2.5rem auto
 
     &__image
         flex-shrink: 0
@@ -22,3 +23,10 @@
 
     &__description
         margin-left: 3rem
+
+    &__contact
+        background: $color-gray-lightest
+        max-width: 300px
+        margin: 3rem auto
+        padding: 3rem
+        text-align: center
