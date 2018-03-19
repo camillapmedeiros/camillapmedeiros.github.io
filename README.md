@@ -4,4 +4,4 @@
 
 ## License
 
-Designed with ♥ by [Camilla Medeiros](http://github.com/camillapmedeiros).
+Designed and coded with ♥ by [Camilla Medeiros](http://github.com/camillapmedeiros).
