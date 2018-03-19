@@ -6,11 +6,11 @@ $(document).ready(function(){
             var scroll = getCurrentScroll();
             if ( scroll >= shrinkHeader ) {
                 $('.header').addClass('header--shrink');
-                $('.header__title').removeClass('header__title--large').addClass('header__title--small');
+                $('.header__title').addClass('header__title--small');
             }
             else {
                 $('.header').removeClass('header--shrink');
-                $('.header__title').removeClass('header__title--small').addClass('header__title--large');
+                $('.header__title').removeClass('header__title--small');
             }
         }
     });

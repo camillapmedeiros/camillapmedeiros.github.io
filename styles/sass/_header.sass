@@ -8,23 +8,25 @@
     background: $color-white
 
     &__title
-        font-family: 'La Quince de Mayra'
-        animation: colorChange 20s infinite alternate
-        margin: 0
+        mask: url('../../assets/images/camilla-medeiros-logo.svg') no-repeat
+        mask-size: contain
+        background-color: $color-red
+        width: 20rem
+        height: 3rem
+        margin: 0 auto
         letter-spacing: 2px
         text-transform: lowercase
         transition: all 0.3s
 
         &--small
-            font-size: $font-size-kilo
-            font-weight: $font-weight-medium
             position: absolute
+            top: 1.5rem
             left: 1rem
-            line-height: 1.5
+            width: 12rem
+            height: 1.7rem
 
         &--large
-            font-size: $font-size-giga
-            font-weight: $font-weight-regular
+            animation: colorChange 20s infinite alternate
 
     &__link
         color: $color-red
@@ -51,13 +53,3 @@
         height: 75px
         padding: 1rem
         box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1)
-
-// MEDIA QUERIES
-@media (min-width: $extra-small) and (max-width: $medium)
-    .header
-        &__title
-            font-size: $font-size-mega
-
-            &--small
-                top: 1.3rem
-                font-size: $font-size-kilo
