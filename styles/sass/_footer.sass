@@ -17,7 +17,7 @@
     border-top: 1px solid $color-gray-lightest
 
     &__left
-        font-size: .75rem
+        font-size: $font-size-micro
         font-weight: $font-weight-light
         margin-right: auto
 
@@ -35,3 +35,12 @@
 
         &:hover
             color: $color-red-light
+
+// MEDIA QUERIES
+@media (min-width: $extra-small) and (max-width: $medium)
+    .footer
+        display: inline-block
+        text-align: center
+
+        &__right
+            display: none

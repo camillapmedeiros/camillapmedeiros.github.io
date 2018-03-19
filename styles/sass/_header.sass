@@ -16,15 +16,15 @@
         transition: all 0.3s
 
         &--small
-            font-size: 2rem
-            font-weight: 500
+            font-size: $font-size-kilo
+            font-weight: $font-weight-medium
             position: absolute
             left: 1rem
             line-height: 1.5
 
         &--large
-            font-size: 4rem
-            font-weight: 400
+            font-size: $font-size-giga
+            font-weight: $font-weight-regular
 
     &__link
         color: $color-red
@@ -53,8 +53,7 @@
         box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1)
 
 // MEDIA QUERIES
-
 @media (min-width: $extra-small) and (max-width: $small)
     .header
         &__title
-            font-size: 3rem
+            font-size: $font-size-mega
