@@ -3,3 +3,41 @@
 // BLOCKS
 //
 ///////////////////////////////////////////////////////////////
+
+.block
+    &__profile
+        display: flex
+        align-items: center
+        max-width: 600px
+        margin: 2.5rem auto
+
+    &__image
+        flex-shrink: 0
+        background: url('../../assets/images/camilla-medeiros.png') no-repeat
+        background-size: cover
+        width: 150px
+        height: 150px
+        margin: 0 auto
+        border-radius: 10rem
+        filter: grayscale(100%)
+
+    &__description
+        margin-left: 3rem
+
+    &__contact
+        background: $color-gray-lightest
+        max-width: 300px
+        margin: 3rem auto
+        padding: 3rem
+        text-align: center
+
+// MEDIA QUERIES
+@media (min-width: $extra-small) and (max-width: $medium)
+    .block
+        &__profile
+            flex-direction: column
+            margin: 1rem auto
+            text-align: center
+
+        &__description
+            margin: 0 2rem

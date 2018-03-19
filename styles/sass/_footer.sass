@@ -11,12 +11,13 @@
     left: 0
     display: flex
     align-items: center
+    z-index: 999
     background: $color-white
     padding: 1rem
     border-top: 1px solid $color-gray-lightest
 
     &__left
-        font-size: .75rem
+        font-size: $font-size-micro
         font-weight: $font-weight-light
         margin-right: auto
 
@@ -33,4 +34,13 @@
         color: $color-gray-light
 
         &:hover
-            color: $color-red-lighter
+            color: $color-red-light
+
+// MEDIA QUERIES
+@media (min-width: $extra-small) and (max-width: $medium)
+    .footer
+        display: inline-block
+        text-align: center
+
+        &__right
+            display: none

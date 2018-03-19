@@ -14,7 +14,7 @@
 
 	<!-- Favicon
 	============================================= -->
-	<!-- <link rel="icon" href="images/favicon.png"> -->
+	<link rel="icon" href="assets/images/favicon.png">
 
 	<!-- CSS
 	============================================= -->
@@ -61,8 +61,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">Frontend & UX/UI design</h6>
-                    <h3 class="item__title">Carta.com</h3>
+                    <h6 class="text__label">Frontend & UX/UI design</h6>
+                    <h3 class="text__title">Carta.com</h3>
                 </li>
                 <li class="list__item">
                     <a
@@ -71,8 +71,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">Frontend & UX/UI design</h6>
-                    <h3 class="item__title">Carta platform</h3>
+                    <h6 class="text__label">Frontend & UX/UI design</h6>
+                    <h3 class="text__title">Carta platform</h3>
                 </li>
                 <li class="list__item">
                     <a
@@ -81,8 +81,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">Frontend & UX/UI design</h6>
-                    <h3 class="item__title">Sugarholics</h3>
+                    <h6 class="text__label">Frontend & UX/UI design</h6>
+                    <h3 class="text__title">Sugarholics</h3>
                 </li>
                 <li class="list__item">
                     <a
@@ -91,8 +91,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">UX/UI design</h6>
-                    <h3 class="item__title">Easy.tasker</h3>
+                    <h6 class="text__label">UX/UI design</h6>
+                    <h3 class="text__title">Easy.tasker</h3>
                 </li>
                 <li class="list__item">
                     <a
@@ -101,8 +101,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">Frontend</h6>
-                    <h3 class="item__title">Bugaboo Studio</h3>
+                    <h6 class="text__label">Frontend</h6>
+                    <h3 class="text__title">Bugaboo Studio</h3>
                 </li>
                 <li class="list__item">
                     <a
@@ -111,8 +111,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">Frontend & UX/UI design</h6>
-                    <h3 class="item__title">Eapp</h3>
+                    <h6 class="text__label">Frontend & UX/UI design</h6>
+                    <h3 class="text__title">Eapp</h3>
                 </li>
                 <li class="list__item">
                     <a
@@ -121,8 +121,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">UX/UI design</h6>
-                    <h3 class="item__title">PAR</h3>
+                    <h6 class="text__label">UX/UI design</h6>
+                    <h3 class="text__title">PAR</h3>
                 </li>
                 <li class="list__item">
                     <a
@@ -131,8 +131,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">UX/UI design</h6>
-                    <h3 class="item__title">Washer</h3>
+                    <h6 class="text__label">UX/UI design</h6>
+                    <h3 class="text__title">Washer</h3>
                 </li>
                 <li class="list__item">
                     <a
@@ -141,8 +141,8 @@
                     >
                         <div class="item__preview"></div>
                     </a>
-                    <h6 class="item__label">UX/UI design</h6>
-                    <h3 class="item__title">Bome</h3>
+                    <h6 class="text__label">UX/UI design</h6>
+                    <h3 class="text__title">Bome</h3>
                 </li>
             </ul>
         </div>
@@ -158,8 +158,8 @@
                 <a class="footer__social" href="http://behance.net/camillapmedeiros">
                     <i class="fa fa-behance"></i>
                 </a>
-                <a class="footer__social" href="http://github.io/camillapmedeiros">
-                    <i class="fa fa-github"></i>
+                <a class="footer__social" href="http://codepen.io/camillapmedeiros">
+                    <i class="fa fa-codepen"></i>
                 </a>
                 <a class="footer__social" href="http://linkedin.com/in/camillapmedeiros">
                     <i class="fa fa-linkedin"></i>
@@ -172,26 +172,6 @@
 	============================================= -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script src="scripts/scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $( function() {
-        $( "#sortable" ).sortable({
-            opacity: 0.8,
-            containment: "parent",
-            helper: "clone",
-            classes: {
-                "ui-sortable-helper": "list__item--sorting"
-            }
-
-        });
-        const containment  = $( "#sortable" ).sortable("option", "containment");
-        const helper       = $( "#sortable" ).sortable( "option", "helper" );
-        $( "#sortable" ).sortable( "option", "classes.ui-sortable-helper", "list__item--sorting" );
-        $( "#sortable" ).sortable( "option", "opacity", 0.5 );
-        $( "#sortable" ).disableSelection();
-        } );
-    </script>
 
 </body>
 </html>
