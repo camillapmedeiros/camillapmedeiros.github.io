@@ -20,12 +20,12 @@ $(document).ready(function(){
 });
 
 $(document).ready(function() {
-  $('.navigation__link, .header__link').click(function(event) {
-    event.preventDefault();
-    newLocation = this.href;
-    $('body').fadeOut(800, newpage);
-  });
-  function newpage() {
-    window.location = newLocation;
-  }
+    $('.navigation__link, .header__link').click(function(event) {
+        event.preventDefault();
+        newLocation = this.href;
+        $('body').fadeOut(800, newpage);
+    });
+    function newpage() {
+        window.location = newLocation;
+    }
 });
