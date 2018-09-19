@@ -5,31 +5,21 @@
 ///////////////////////////////////////////////////////////////
 
 .header
-    background: $color-white
+    position: relative
+    display: inline-flex
+    font-weight: $font-weight-lightest
+    font-size: $font-size-kilo
+    background: rgba(255,255,255,0.95)
+    margin: 0
 
-    &__title
-        mask: url('../../assets/images/camilla-medeiros-logo.svg') no-repeat
-        mask-size: contain
-        background-color: $color-red
-        width: 20rem
-        height: 3rem
-        margin: 0 auto 2rem
-        letter-spacing: 2px
-        text-transform: lowercase
-        transition: all 0.3s
-
-        &--small
-            position: absolute
-            top: 1.5rem
-            left: 1rem
-            width: 12rem
-            height: 1.7rem
-            margin: 0
-
-        &--large
-            animation: colorChange 20s infinite alternate
+    &__name
+        font-size: $font-size-kilo
+        color: $color-red
+        margin: 0
 
     &__link
+        font-size: 1.5rem
+        font-weight: $font-weight-lightest
         color: $color-red
         height: 100%
 
@@ -37,21 +27,57 @@
         position: fixed
         right: 0
         left: 0
-        height: 210px
-        padding-top: 4rem
+        padding: .5rem
         overflow: hidden
         transition: height 0.3s
         text-align: center
         z-index: 9999
+        border-bottom: 1px solid $color-gray-lightest
 
     &--full
         @include flexbox
         width: 100%
-        height: calc(100vh - 3.25rem)
+        height: 100vh
         transition: all 2s ease
 
-    &--shrink
-        transition: all 0.4s
-        height: 72px
-        padding: 1rem
-        box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.1)
+    &__wrapper
+        display: flex
+        align-items: baseline
+        justify-content: space-between
+        width: 100%
+        max-width: 920px
+        margin: 0 auto
+
+.arrow
+    a
+        position: absolute
+        bottom: 20px
+        left: 50%
+        z-index: 2
+        display: inline-block
+        -webkit-transform: translate(0, -50%)
+        transform: translate(0, -50%)
+        color: $color-gray-darkest
+        font : normal 400 20px/1 'Poppins', sans-serif
+        letter-spacing: .1em
+        text-decoration: none
+        transition: opacity .3s
+        padding-top: 60px
+
+        &:hover
+            opacity: .5
+
+        span
+            position: absolute
+            top: 0
+            left: 50%
+            width: 24px
+            height: 24px
+            margin-left: -12px
+            border-left: 1px solid $color-gray
+            border-bottom: 1px solid $color-gray
+            -webkit-transform: rotate(-45deg)
+            transform: rotate(-45deg)
+            -webkit-animation: arrow 2s infinite
+            animation: arrow 2s infinite
+            box-sizing: border-box

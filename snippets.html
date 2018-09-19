@@ -16,6 +16,10 @@
 	============================================= -->
 	<link rel="icon" href="assets/images/favicon.png">
 
+    <!-- FONTS
+    ============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500" rel="stylesheet">
+
 	<!-- CSS
 	============================================= -->
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
@@ -25,30 +29,32 @@
 </head>
 <body class="body">
     <header class="header header--medium">
-        <h1 class="header__title">
-            <a href="index.html" class="header__link">
-                Camilla Medeiros
-            </a>
-        </h1>
-        <nav class="navigation">
-            <ul class="navigation__list">
-                <li class="navigation__item header__trigger--medium">
-                    <a href="projects.html" class="navigation__link">
-                        Projects
-                    </a>
-                </li>
-                <li class="navigation__item header__trigger`--medium">
-                    <a href="snippets.html" class="navigation__link navigation__link--active">
-                        Snippets
-                    </a>
-                </li>
-                <li class="navigation__item header__trigger--medium">
-                    <a href="about.html" class="navigation__link">
-                        About
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__wrapper">
+            <h1 class="header__name">
+                <a href="index.html" class="header__link">
+                    Camilla Medeiros
+                </a>
+            </h1>
+            <nav class="navigation">
+                <ul class="navigation__list">
+                    <li class="navigation__item header__trigger--medium">
+                        <a href="index.html" class="navigation__link">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="navigation__item header__trigger`--medium">
+                        <a href="snippets.html" class="navigation__link navigation__link--active">
+                            Snippets
+                        </a>
+                    </li>
+                    <li class="navigation__item header__trigger--medium">
+                        <a href="about.html" class="navigation__link">
+                            About
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main main--full">
         <div class="main__wrapper">
@@ -175,7 +181,7 @@
                     <i class="fa fa-behance"></i>
                 </a>
                 <a class="footer__social" href="http://codepen.io/camillapmedeiros">
-                    <i class="faF fa-codepen"></i>
+                    <i class="fa fa-codepen"></i>
                 </a>
                 <a class="footer__social" href="http://linkedin.com/in/camillapmedeiros">
                     <i class="fa fa-linkedin"></i>
