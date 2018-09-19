@@ -7,20 +7,25 @@
 .navigation
 
     &__list
+        margin: 0
+
     &__item
         display: inline
-        font-size: $font-size-mean
+        font-size: $font-size-mini
         font-weight: $font-weight-light
         margin: 0 .5rem
-        text-transform: uppercase
 
     &__link
-        color: $color-gray-dark
-        padding: 0 .5rem 1rem
+        color: $color-gray-light
+        padding: 0 0 .6rem
         border-bottom: 6px solid transparent
 
         &:hover
-            border-bottom: 6px solid $color-gray-lightest
+            color: $color-gray
 
         &--active
-            border-bottom: 6px solid $color-gray-lightest
+            font-weight: $font-weight-regular
+            color: $color-gray-darkest
+
+            &:hover
+                color: $color-gray-darkest
