@@ -5,9 +5,9 @@ $(document).ready(function(){
     $(window).scroll(function() {
         event.preventDefault();
         if (window.scrollY >= height){
-            $('#header').show();
+            $('#header').fadeIn();
         } else {
-            $('#header').hide();
+            $('#header').fadeOut();
         }
     });
     function getCurrentScroll() {

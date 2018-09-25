@@ -9,7 +9,7 @@
     display: inline-flex
     font-weight: $font-weight-lightest
     font-size: $font-size-kilo
-    background: rgba(255,255,255,0.95)
+    background: $color-white
     margin: 0
 
     &__name
@@ -32,7 +32,7 @@
         transition: height 0.3s
         text-align: center
         z-index: 9999
-        border-bottom: 1px solid $color-gray-lightest
+        box-shadow: 0 10px 20px 0 rgba(90,122,190,0.05)
 
     &--full
         @include flexbox
