@@ -5,28 +5,35 @@
 ///////////////////////////////////////////////////////////////
 
 .header
-    position: relative
-    display: inline-flex
-    font-weight: $font-weight-lightest
-    font-size: $font-size-kilo
-    background: $color-white
-    margin: 0
-
-    &__name
-        font-size: $font-size-kilo
-        color: $color-red
-        margin: 0
 
     &__link
         font-size: 1.5rem
-        font-weight: $font-weight-lightest
+        font-weight: $font-weight-light
         color: $color-red
         height: 100%
 
+    &--colored
+        color: $color-red
+
+    &--small
+        margin-top: .75rem
+        font-size: 1.4rem
+        font-weight: $font-weight-lightest
+        color: $color-gray
+
     &--medium
+        position: relative
+        display: inline-flex
+        font-weight: $font-weight-medium
+        font-size: $font-size-giga
+        background: $color-white
+        margin: 0
+
+    &--fixed
         position: fixed
         right: 0
         left: 0
+        background: $color-white
         padding: .5rem
         overflow: hidden
         transition: height 0.3s
@@ -41,11 +48,14 @@
 
     &__wrapper
         display: flex
-        align-items: baseline
+        align-items: center
         justify-content: space-between
         width: 100%
         max-width: 920px
         margin: 0 auto
+
+    &__name
+        margin: 0
 
 .arrow
     a
@@ -73,8 +83,8 @@
             width: 24px
             height: 24px
             margin-left: -12px
-            border-left: 1px solid $color-gray
-            border-bottom: 1px solid $color-gray
+            border-left: 1px solid $color-red-light
+            border-bottom: 1px solid $color-red-light
             -webkit-transform: rotate(-45deg)
             transform: rotate(-45deg)
             -webkit-animation: arrow 2s infinite
