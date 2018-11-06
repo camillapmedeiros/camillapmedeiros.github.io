@@ -31,9 +31,9 @@ $(document).ready(function(){
     $(window).scroll(function() {
         event.preventDefault();
         if (window.scrollY >= 200){
-            $('.header--medium').css("box-shadow", "0 10px 20px 0 rgba(90,122,190,0.05)");
+            $('.header--fixed').css("box-shadow", "0 1px 3px rgba(0,0,0,.08)");
         } else {
-            $('.header--medium').css("box-shadow", "none");
+            $('.header--fixed').css("box-shadow", "none");
         }
     });
     function getCurrentScroll() {
