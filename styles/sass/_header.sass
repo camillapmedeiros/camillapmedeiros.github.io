@@ -90,3 +90,31 @@
             -webkit-animation: arrow 2s infinite
             animation: arrow 2s infinite
             box-sizing: border-box
+
+// MEDIA QUERIES
+@media (min-width: $extra-small) and (max-width: $small)
+    .header
+        &--fixed
+            padding: 1rem
+
+        &--medium
+            flex-wrap: wrap
+            font-size: $font-size-mega
+
+        &--full
+            flex-wrap: wrap
+            padding: 1rem
+
+
+@media (min-width: $small) and (max-width: $large)
+    .header
+        &--fixed
+            padding: 1rem
+            
+        &--medium
+            flex-wrap: wrap
+            font-size: $font-size-mega
+
+        &--full
+            flex-wrap: wrap
+            padding: 1rem
